@@ -33,4 +33,6 @@ myApp.get('/answer', (req, res) => {
 	res.send("Are you lost? There is nothing to see here.");
 });
 
-myApp.listen(3000);
+myApp.listen(3000, () => {
+	console.log('Server started on port 3000');
+});
